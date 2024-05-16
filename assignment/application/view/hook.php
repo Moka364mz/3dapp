@@ -1,11 +1,7 @@
-<!-- This PHP script is used to organize image files for websites. 
-It scans a designated directory and collects URLs for image files. 
-It only includes files with extensions like jpg, jpeg, gif, or png. 
-After gathering the URLs, it presents them as a response string. 
-This enables easy integration of images into web pages or galleries. -->
+
 <?php
 $directory = '../assets/images/gallery_images';
-$imagePath = '../submission/mvc/assets/images/gallery_images';
+$imagePath = '../application/assets/images/gallery_images';
 $allowed_extensions = array('jpg','jpeg','gif','png');
 $file_parts = array();
 $response = "";
@@ -24,3 +20,8 @@ while ($file = readdir($dir_handle)) {
 closedir($dir_handle);
 echo substr_replace($response,"",-1);
 ?>
+<!-- This PHP script is used to organize image files for websites. 
+It scans a designated directory and collects URLs for image files. 
+It only includes files with extensions like jpg, jpeg, gif, or png. 
+After gathering the URLs, it presents them as a response string. 
+This enables easy integration of images into web pages or galleries. -->

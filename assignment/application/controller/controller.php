@@ -11,11 +11,11 @@ class Controller {
 	public $load;
 	public $model;
 	
-	function __construct($pageURI = null) 
+	function __construct($pageMethod = null) 
 	{
 		$this->load = new Load(); 
 		$this->model = new Model();
-		$this->$pageURI();
+		$this->$pageMethod();
 	}
 	function home()
 	{
@@ -53,6 +53,12 @@ class Controller {
 	function dbGetData()
 	{
 		echo "Data Read Function";
+	}
+
+	function apiCocaCola()
+	{
+		$data = $this->model->dbGetData();
+		$this->load->view('mainviewpage',$data);	
 	}
 }
 ?>    

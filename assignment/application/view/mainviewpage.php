@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <!-- This HTML code snippet contains a few lines that connect CSS stylesheets to a webpage. 
     It brings in styles from Bootstrap, x3dom, a custom stylesheet, "blob.css", and jQuery FancyBox. 
-    All these stylesheets are stored in the `../submission/mvc/assets/css/` directory. 
+    All these stylesheets are stored in the `../application/assets/css/` directory. 
     The `crossorigin="anonymous"` attribute in some of the links makes sure that when these 
     CSS files are requested, they don't carry any credential data and are considered anonymous 
     by the server. -->
-    <link rel="stylesheet" href="../submission/mvc/assets/css/bootstrap.css" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' href='../submission/mvc/assets/css/x3dom.css'>
-    <link rel="stylesheet" href="../submission/mvc/assets/css/custom.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="../submission/mvc/assets/css/blob.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../application/assets/css/bootstrap.css" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='../application/assets/css/x3dom.css'>
+    <link rel="stylesheet" href="../application/assets/css/custom.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../application/assets/css/blob.css" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="../submission/mvc/assets/css/jquery.fancybox.min.css">
-    <title>Submission</title>
+    <link rel="stylesheet" type="text/css" href="../application/assets/css/jquery.fancybox.min.css">
+    <title>Assignment Coca Cola</title>
 
   </head>
   <body id="bodyColor">
@@ -68,7 +68,7 @@
                 <x3d width='600px' height='600px'>
                   <scene>
                     <Transform id="modelTransform1" rotation="0 0 0 1">
-                      <inline url="../submission/mvc/assets/x3d/fanta.x3d" > </inline>
+                      <inline url="../application/assets/x3d/fanta.x3d" > </inline>
                     </Transform>
                   </scene>          
                 </x3d>
@@ -77,11 +77,11 @@
               </div>  
             </div> 
           </div>  
-          <div id="about" class="main_contents" style="display:none;">
-          <!--The application is divided into several main areas, each designed to provide detailed information 
+           <!--The application is divided into several main areas, each designed to provide detailed information 
           and interactive experiences. The #home section is the first thing you see and focuses on Coca-Cola's brand. 
           Along with this information, there is a 3D model viewer on the page. This lets users look 
           at a Coca-Cola model in a dynamic and interactive way.-->
+          <div id="about" class="main_contents" style="display:none;">
             <div class="col-sm-4">
               <div class="card-body">  
                   <div id="title_coke" class="card-title drinksText"></div>
@@ -104,8 +104,8 @@
             descriptions.-->
             <div class="row">
                   <div class="col-sm-4">
-                      <a href="../submission/mvc/assets/images/renderImages/cinema4d.jpg" data-fancybox data-caption="3D Coke Can in Cinema4D">
-                        <img class="card-img-top img-fluid img-thumbnail" src="../submission/mvc/assets/images/cinema4d.jpg" alt="Coca Cola">
+                      <a href="../application/assets/images/renderImages/cinema4d.jpg" data-fancybox data-caption="3D Coke Can in Cinema4D">
+                        <img class="card-img-top img-fluid img-thumbnail" src="../application/assets/images/cinema4d.jpg" alt="Coca Cola">
                       </a>
                       <div class="card img-narrow">
                           <div class="card-body">
@@ -116,8 +116,8 @@
                       </div>
                   </div>
                   <div class="col-sm-4">
-                      <a href="../submission/mvc/assets/images/renderImages/photoshop.jpg" data-fancybox data-caption="Texture for 3D Coke Can ">
-                        <img class="card-img-top img-fluid img-thumbnail" src="../submission/mvc/assets/images/photoshop.jpg" alt="Coca Cola">
+                      <a href="../application/assets/images/renderImages/photoshop.jpg" data-fancybox data-caption="Texture for 3D Coke Can ">
+                        <img class="card-img-top img-fluid img-thumbnail" src="../application/assets/images/photoshop.jpg" alt="Coca Cola">
                       </a>
                       <div class="card">
                           <div class="card-body">
@@ -128,8 +128,8 @@
                       </div>
                   </div>
                   <div class="col-sm-4">
-                      <a href="../submission/mvc/assets/images/renderImages/vrml.jpg" data-fancybox data-caption="3D Coke Can in castle model viewer">
-                        <img class="card-img-top img-fluid img-thumbnail" src="../submission/mvc/assets/images/vrml.jpg" alt="Coca Cola">
+                      <a href="../application/assets/images/renderImages/vrml.jpg" data-fancybox data-caption="3D Coke Can in castle model viewer">
+                        <img class="card-img-top img-fluid img-thumbnail" src="../application/assets/images/vrml.jpg" alt="Coca Cola">
                       </a>
                       <div class="card img-narrow">
                           <div class="card-body">
@@ -158,13 +158,13 @@
                             <scene>
                                 <Switch whichChoice="0" id='SceneSwitch'>
                                     <transform>
-                                        <inline nameSpaceName="model" mapDEFToID="true"  url="../submission/mvc/assets/x3d/coke28.x3d" id="coke"></inline>
+                                        <inline nameSpaceName="model" mapDEFToID="true"  url="../application/assets/x3d/coke28.x3d" id="coke"></inline>
                                     </transform>
                                     <transform>
-                                        <inline nameSpaceName="model" mapDEFToID="true" url="../submission/mvc/assets/x3d/sprite.x3d" id="sprite"></inline>
+                                        <inline nameSpaceName="model" mapDEFToID="true" url="../application/assets/x3d/sprite.x3d" id="sprite"></inline>
                                     </transform>
                                     <transform>
-                                        <inline nameSpaceName="model" mapDEFToID="true"  url="../submission/mvc/assets/x3d/drpepper.x3d" id="pepper"></inline>
+                                        <inline nameSpaceName="model" mapDEFToID="true"  url="../application/assets/x3d/drpepper.x3d" id="pepper"></inline>
                                     </transform>
                                 </Switch>
                             </scene>
@@ -196,7 +196,7 @@
                   <x3d width='600px' height='600px'>
                     <scene>
                         <Transform id="modelTransform1" rotation="0 0 0 1">
-                          <inline url="../submission/mvc/assets/x3d/cokecup1.x3d" > </inline>
+                          <inline url="../application/assets/x3d/cokecup1.x3d" > </inline>
                         </Transform>
                     </scene>          
                   </x3d>
@@ -294,17 +294,17 @@
       Icons from FontAwesome make the website look nicer and easier to navigate by using simple graphics. 
       The custom scripts like `custom.js` and `gallery_generator.js` are used to make specific parts of the website work in special ways, 
       such as loading images beautifully and managing data smoothly. -->
-      <script src="../submission/mvc/assets/js/jquery-3.2.1.js" crossorigin="anonymous"></script>
-      <script src="../submission/mvc/assets/js/popper.min.js" crossorigin="anonymous"></script>
-      <script src="../submission/mvc/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
-      <script src="../submission/mvc/assets/js/fontawesome-all.min.js"></script>
-      <script src="../submission/mvc/assets/js/custom.js" crossorigin="anonymous"></script>
-      <script src="../submission/mvc/assets/js/swap_restyle.js"></script>
-      <script type='text/javascript' src='../submission/mvc/assets/js/x3dom-1.7.2/x3dom.js'></script>
-      <script type="text/javascript" src="../submission/mvc/assets/js/gallery_generator.js"></script>
-      <script src="../submission/mvc/assets/js/getJsonData.js"></script>
-      <script src="../submission/mvc/assets/js/modelInteractions.js"></script>
-      <script src="../submission/mvc/assets/js/modelInteractions2.js"></script>
-      <script src="../submission/mvc/assets/js/jquery.fancybox.min.js"></script>
+      <script src="../application/assets/js/jquery-3.2.1.js" crossorigin="anonymous"></script>
+      <script src="../application/assets/js/popper.min.js" crossorigin="anonymous"></script>
+      <script src="../application/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+      <script src="../application/assets/js/fontawesome-all.min.js"></script>
+      <script src="../application/assets/js/custom.js" crossorigin="anonymous"></script>
+      <script src="../application/assets/js/swap_restyle.js"></script>
+      <script type='text/javascript' src='../application/assets/js/x3dom-1.7.2/x3dom.js'></script>
+      <script type="text/javascript" src="../application/assets/js/gallery_generator.js"></script>
+      <script src="../application/assets/js/getJsonData.js"></script>
+      <script src="../application/assets/js/modelInteractions.js"></script>
+      <script src="../application/assets/js/modelInteractions2.js"></script>
+      <script src="../application/assets/js/jquery.fancybox.min.js"></script>
   </body>
 </html>

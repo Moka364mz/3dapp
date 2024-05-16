@@ -22,7 +22,7 @@ var response;
 
 $(document).ready(function() {
     var xmlHttp = new XMLHttpRequest();
-    var send = "../submission/mvc/view/hook.php";
+    var send = "../application/view/hook.php";
     console.log(send);
 
     xmlHttp.open("GET", send, true);

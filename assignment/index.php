@@ -6,5 +6,5 @@ and rendering views in the MVC framework.  -->
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors',1);
 
-require 'mvc/mvc.php';
+require 'application/mvc.php';
 ?>

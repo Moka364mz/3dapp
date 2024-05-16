@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	 // An AJAX call is made to fetch the main text data from the JSON data store. 
-	 $.getJSON('../submission/mvc/model/data.json', function(jsonObj) {
+	 $.getJSON('../application/model/data.json', function(jsonObj) {
 		console.log(jsonObj);
 		$('#title_home').html('<h2>' + jsonObj.pageTextData[0].title + '<h2>');
 		$('#subTitle_home').html('<h3>' + jsonObj.pageTextData[0].subTitle + '</h3>');
